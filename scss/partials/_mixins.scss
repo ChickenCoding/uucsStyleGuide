@@ -1,0 +1,139 @@
+// Style setup
+@mixin theme($name, $color, $txt, $w:null) {
+  .#{$name} {
+    .color-box {
+      height: 75px;
+      width: 75px;
+      text-align: center;
+      padding-top: 24px;
+      background: $color;
+      border: 2px solid #333;
+      display: inline-block;
+      margin: 20px 7px;
+      &.light {
+        background: lighten($color, 30%);
+      }
+      &.dark {
+        background: darken($color, 30%);
+        color: $white
+      }
+      &.gray {
+        background: $gray;
+      }
+      &.light-gray {
+        background: lighten($gray, 30%);
+      }
+      &.dark-gray {
+        background: darken($gray, 40%);
+        color: $white
+      }
+    }
+
+    .button {
+      background: $color;
+      color: $txt;
+      border-radius: 4px;
+      display: inline-block;
+      box-shadow: 0 2px 0 darken($color, 20%);
+      padding: 7px 12px;
+      margin: 5px 0;
+      &.dark {
+        background: darken($color, 30%);
+        box-shadow: 0 2px 0 lighten($color, 20%);
+      }
+      i {
+        margin-left: 5px;
+      }
+    }
+    .feature {
+      background: $color;
+      color: $white;
+      padding: 10px 15px;
+      margin: 20px 0;
+      border: 2px solid darken($color, 30%);
+      border-left-width: 5px;
+      font-weight: 300;
+      h4 {
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+      @if $w { width: $w;}
+      &.light {
+        background: lighten($color, 30%);
+        color:$txt-black;
+        border-left-width: 5px;
+        @if $w { width: $w;}
+      }
+      &.dark {
+        background: darken($color, 20%);
+        color:$white;
+        border: 2px solid lighten($color, 20%);
+        border-left-width: 5px;
+        @if $w { width: $w;}
+      }
+    }
+    .sub-header {
+      background-color: lighten($color, 29%);
+      color: $txt-black;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 15px 0 15px 50px;
+      border-radius: 4px;
+      box-shadow: 0 2px 0 darken($color, 10%);
+      h2 {
+        margin: 0;
+        font-weight: 600;
+      }
+      span {
+        font-weight: 400;
+      }
+    }
+    footer {
+      background: darken($color, 45%);
+      border-top: 3px solid $color;
+      border-bottom: 6px solid $color;
+      padding: 15px 0;
+      h5 {
+        color: $white;
+        font-size: .95rem;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .footer-social li {
+        background: darken($color, 15%);
+        padding: 5px;
+        height: 35px;
+        width: 35px;
+        margin-bottom: 10px;
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+} // - closes mixin
+
+
+
+
+
+
+
+// ===== Footer =====
+@mixin footer-social($bgc) {
+  background-color: $bgc;
+  color: $txt;
+  h5 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: .95rem;
+  } 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+} 

@@ -1,0 +1,112 @@
+@import "partials/vars";
+@import "partials/mixins";
+@import "partials/footer";
+
+
+// Guide Style
+html, body {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+
+} 
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  span {
+  font-size: 2.4rem;
+  font-weight: 400;
+  display: block;
+  }
+}
+
+// Color blocks
+.color-box {
+ 
+}
+
+// .color-box-medium {
+//   @include color-box($medium-blue);
+// }
+
+// .color-box-dark {
+//   @include color-box($dark-blue);
+// }
+
+// .color-box-gray {
+//   @include color-box($gray);
+// }
+// .color-box-dark-gray {
+//   @include color-box($dark-gray);
+// }
+// .color-box-black {
+//   @include color-box($black);
+// }
+// ===== Navigation =====
+.navbar-default {
+    background-color: $nav-bg;
+    border-left: 1px solid $white;
+    border-right: 1px solid $white;
+    border-top: 1px solid $nav-border;
+    border-bottom: 1px solid $nav-border;
+    border-radius: 0;
+}
+.navbar-nav li:link,
+.navbar-nav li:hover,
+.navbar-nav li:active,
+.navbar-nav li:visited {
+  background-color: $white;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: $light-blue;
+}
+.navbar-default .navbar-nav>li>a {
+    color: $blue;
+    &:hover {
+      color:$blue;
+    }
+  }
+.dropdown-menu>li>a:hover {
+  background-color: $light-blue;
+}
+.navbar-nav>li>.dropdown-menu {
+  background-color: $nav-bg;
+  border-top: 0;
+}
+/* ===== bxSlider = IMAGE CAPTIONS ===== */
+
+.bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666\9;
+  background: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  }
+
+.bx-wrapper .bx-caption span {
+  color: #333;
+  font-family: Arial;
+  display: block;
+  font-size: .85em;
+  padding: 10px;
+}
+/* ===== BUTTONS ===== */
+@include theme(public, $blue, $white);
+@include theme(private, $teal, $white);
+
+.red {
+  border: 1px solid red;
+}
+
+a:link.button,
+a:active.button {
+  text-decoration: none;
+}
+a:hover.button,
+a:visited.button {
+  text-decoration: none;
+}
+
+
