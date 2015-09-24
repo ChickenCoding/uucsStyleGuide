@@ -1,6 +1,8 @@
 // Style setup
 @mixin theme($name, $color, $txt, $w:null) {
   .#{$name} {
+// ====== Color Blocks =========
+    
     .color-box {
       height: 75px;
       width: 75px;
@@ -27,8 +29,78 @@
         background: darken($gray, 40%);
         color: $white
       }
+    } 
+// ====== Navigation =========
+    .navbar-default {
+    background-color: $white;
+    border-left: 1px solid $white;
+    border-right: 1px solid $white;
+    border-top: 1px solid $color;
+    border-bottom: 1px solid $color;
+    border-radius: 0;
     }
+    .navbar-default .navbar-toggle {
+      border-color: $color;
+      background: $color;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: $white;
+    }
+    .navbar-nav li:link,
+    .navbar-nav li:hover,
+    .navbar-nav li:active,
+    .navbar-nav li:visited {
+      background-color: $white;
+      }
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+      color: darken($color, 30%);
+      background-color: lighten($color, 30%);
+      }
+    .navbar-default .navbar-nav>li>a {
+      color: $color;
+      &:hover {
+        background: lighten($color, 30%);
+        color: lighter($color, 30%);
+        }
+      }
+    .dropdown-menu>li>a{
+        color: darken($color, 30%);
+      &:hover {
+        background-color: lighten($color, 30%);
+        color: darken($color, 30%);
+      }
+    .navbar-nav>li>.dropdown-menu {
+      background-color: $white;
+      border-top: 0;
+      }
+    .dropdown-open {
+      background: lighter($color, 30%);
+    }
+  }
 
+
+// ====== Image Captions =========
+    .image-wrap {
+      position: relative;
+      & img {
+       max-width: 100%
+      }
+      & .image-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 36px;
+        background: $color;
+        overflow: hidden;
+        text-align: center;
+      }
+    }
+    
+
+
+
+// ====== Buttons =========
     .button {
       background: $color;
       color: $txt;
@@ -44,7 +116,8 @@
       i {
         margin-left: 5px;
       }
-    }
+    } 
+// ====== Feature =========
     .feature {
       background: $color;
       color: $white;
@@ -71,7 +144,8 @@
         border-left-width: 5px;
         @if $w { width: $w;}
       }
-    }
+    } 
+// ====== Subheader =========
     .sub-header {
       background-color: lighten($color, 29%);
       color: $txt-black;
@@ -87,7 +161,8 @@
       span {
         font-weight: 400;
       }
-    }
+    } 
+// ====== Footer =========
     footer {
       background: darken($color, 45%);
       border-top: 3px solid $color;
@@ -96,24 +171,27 @@
       h5 {
         color: $white;
         font-size: .95rem;
-      }
+        }
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-      }
-      .footer-social li {
-        background: darken($color, 15%);
-        padding: 5px;
-        height: 35px;
-        width: 35px;
-        margin-bottom: 10px;
-        i {
-          color: white;
         }
-      }
-    }
-  }
+      .footer-social {
+        margin-top: 40px;
+        li {
+        background: darken($color, 10%);
+        padding: 5px;
+        color: $white;
+        display: inline;
+        margin-right: 15px;
+        &:last-child {
+          margin-right: 0;
+          }
+        }
+      } //ul
+    } // footer
+  } // $name
 } // - closes mixin
 
 
@@ -121,19 +199,18 @@
 
 
 
-
 // ===== Footer =====
-@mixin footer-social($bgc) {
-  background-color: $bgc;
-  color: $txt;
-  h5 {
-    margin: 0;
-    padding-bottom: 10px;
-    font-size: .95rem;
-  } 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-} 
+// @mixin footer-social($bgc) {
+//   background-color: $bgc;
+//   color: $txt;
+//   h5 {
+//     margin: 0;
+//     padding-bottom: 10px;
+//     font-size: .95rem;
+//   } 
+//   ul {
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     }
+//   } 

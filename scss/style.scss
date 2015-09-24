@@ -6,74 +6,22 @@
 // Guide Style
 html, body {
   font-size: 18px;
-  font-family: 'Lato', sans-serif;
-
+  font-family: $sans-serif;
 } 
 h1 {
+  font-family: $serif;
   font-size: 2.8rem;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   span {
+  font-family: $sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
   display: block;
   }
 }
 
-// Color blocks
-.color-box {
- 
-}
 
-// .color-box-medium {
-//   @include color-box($medium-blue);
-// }
-
-// .color-box-dark {
-//   @include color-box($dark-blue);
-// }
-
-// .color-box-gray {
-//   @include color-box($gray);
-// }
-// .color-box-dark-gray {
-//   @include color-box($dark-gray);
-// }
-// .color-box-black {
-//   @include color-box($black);
-// }
-// ===== Navigation =====
-.navbar-default {
-    background-color: $nav-bg;
-    border-left: 1px solid $white;
-    border-right: 1px solid $white;
-    border-top: 1px solid $nav-border;
-    border-bottom: 1px solid $nav-border;
-    border-radius: 0;
-}
-.navbar-nav li:link,
-.navbar-nav li:hover,
-.navbar-nav li:active,
-.navbar-nav li:visited {
-  background-color: $white;
-}
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: #555;
-    background-color: $light-blue;
-}
-.navbar-default .navbar-nav>li>a {
-    color: $blue;
-    &:hover {
-      color:$blue;
-    }
-  }
-.dropdown-menu>li>a:hover {
-  background-color: $light-blue;
-}
-.navbar-nav>li>.dropdown-menu {
-  background-color: $nav-bg;
-  border-top: 0;
-}
 /* ===== bxSlider = IMAGE CAPTIONS ===== */
 
 .bx-wrapper .bx-caption {
@@ -108,5 +56,9 @@ a:hover.button,
 a:visited.button {
   text-decoration: none;
 }
+// .footer-social {
+//   text-align: center;
+//   color: $white;
+// }
 
 
