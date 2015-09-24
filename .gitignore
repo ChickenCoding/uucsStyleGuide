@@ -3,3 +3,4 @@ config.codekit
 uucs.mcp
 .DS_Store
 vendor/
+composer.lock
