@@ -1,0 +1,20 @@
+{
+  "name": "styleguide",
+  "version": "0.0.1",
+  "homepage": "https://github.com/awakekat/uucsStyleGuide",
+  "authors": [
+    "Katherine <awakekat@aol.com>"
+  ],
+  "description": "awakekat's style",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
