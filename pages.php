@@ -1,24 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Page Layout</title>
-</head>
-<body>
-<!-- 100% wide -->
-  <header>
-    
-  </header>
-  <div class="breadcrumb">
-    
-  </div>
-<!-- two colums 4/8 -->
-<div class="container">
-  <div class="row">
-    .col
-  </div>
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+$app = new Silex\Application();
 
-</div>
+$app["debug"] = true;
 
-</body>
-</html>
+$app->register(new Silex\Provider\TwigServiceProvider(), array(
+  'twig.path' => __DIR__ . '/page_parts',
+));
+
+$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
+$app->register(new Silex\Provider\SessionServiceProvider());
+
+$app->get('/', function () use ($app) {
+  return $app['twig']->render('pages.html');
+})->bind("homepage");
+
+$app->run();
+
+/* End of file index.php */
