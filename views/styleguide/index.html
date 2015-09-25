@@ -21,50 +21,19 @@
 </head>
 <body>
 
-<!-- ===== Color boxes ===== -->
   <div class="container">
     <div class="row">
-    <div class="col-sm-12">
-      <h2>
-        <a href="pages.php">Pages</a>
-      </h2>
+      <div class="col-sm-12">
+        <h2>
+          <a href="{{ app.url_generator.generate("homepage") }}">Pages</a>
+        </h2>
       </div>
-      <div class="col-sm-6">
-        <div class="public">
-
-          <h3>Colors: Public</h3>
-          <div class="color-box light">light</div>
-          <div class="color-box">base</div>
-          <div class="color-box dark">dark</div>
-          <div class="color-box light-gray">light</div>
-          <div class="color-box gray">base</div>
-          <div class="color-box dark-gray">dark</div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="private">
-          <h3>Colors: Private</h3>
-          <div class="color-box light">light</div>
-          <div class="color-box">base</div>
-          <div class="color-box dark">dark</div>
-          <div class="color-box light-gray">light</div>
-          <div class="color-box gray">base</div>
-          <div class="color-box dark-gray">dark</div>
-        </div>
-      </div>
+      <!-- ===== Color boxes ===== -->
+      {% include 'styleguide/styleguide_parts/colors.html' %}
     </div>
-    <div class="color-box-light-gray"></div>
-    <div class="color-box-medium-gray"></div>
-    <div class="color-box-dark-gray"></div>
-    
-    <div class="color-box-light-blue"></div>
-    <div class="color-box-blue"></div>
-    <div class="color-box-dark-blue"></div>
-     
-      
-      <!-- ===== Site Title ===== -->
-      <h1>Site Title <span>Sub Title</span></h1>
 
+    <!-- ===== Site Title ===== -->
+    {% include 'styleguide/styleguide_parts/typo.html' %}
 
       <!-- ===== Navigation ===== -->
       <h4>Public Navbar</h4>

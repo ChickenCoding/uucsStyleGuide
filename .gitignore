@@ -1,7 +1,9 @@
 config.codekit
 client/
+node_modules/
 uucs.mcp
 .DS_Store
 vendor/
 composer.lock
 .sass_cache
+npm-debug.log
