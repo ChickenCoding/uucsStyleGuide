@@ -25,6 +25,8 @@ $ composer install
 
 ### Run it
 
+#### Php webserver
+
 You can run ``php -S localhost:85`` (as 85 the port, change it to your needs)
 , then go to ``http://localhost:85`` (or the port you changed, if so), to see
 the homepage.

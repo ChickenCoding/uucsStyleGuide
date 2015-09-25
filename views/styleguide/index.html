@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900|Arvo:400,700' rel='stylesheet' type='text/css'>
   <title>Church Style Guide</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet"
+    type="text/css"
+    href="https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900|Arvo:400,700"
+  >
+  <link rel="stylesheet"
+    href="client/bower_components/bootstrap/dist/css/bootstrap.min.css"
+  >
+  <link rel="stylesheet"
+    href="client/bower_components/font-awesome/css/font-awesome.min.css"
+  >
+  <link rel="stylesheet"
+    href="client/bower_components/bxslider-4/dist/jquery.bxslider.min.css"
+  >
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -319,22 +328,9 @@
   </div>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="js/jquery.bxslider.min.js"></script>
-  <script>
-    $(document).ready(function(){
-    $('.bxslider').bxSlider({
-     
-      slideWidth: 935,
-      //captions: true,
-    speed: 900,
-    auto: true,
-    //controls: false,
-    pager: false,
-    touchEnabled: false
-    });
-    });
-  </script>
+  <script src="client/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="client/bower_componentsdist/js/bootstrap.min.js"></script>
+  <script src="client/bower_components/bxslider-4/dist/jquery.bxslider.min.js"></script>
+  <script src="js/bxSlider.js"></script>
 </body>
 </html>
