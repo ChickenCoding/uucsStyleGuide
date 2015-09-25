@@ -35,7 +35,7 @@ h1 span {
   padding: 10px;
 }
 
-/* ===== BUTTONS ===== */
+/* ====||||| PUBLIC STYLES |||||==== */
 .public .color-box {
   height: 75px;
   width: 75px;
@@ -124,6 +124,10 @@ h1 span {
 
 .public .dropdown-menu > li > a .dropdown-open {
   background: lighter(#52ABDB, 30%);
+}
+
+.public .breadcrumb {
+  color: #C0C0C2;
 }
 
 .public .image-wrap {
@@ -245,6 +249,7 @@ h1 span {
   margin-right: 0;
 }
 
+/* ====||||| PRIVATE STYLES |||||===== */
 .private .color-box {
   height: 75px;
   width: 75px;
@@ -333,6 +338,10 @@ h1 span {
 
 .private .dropdown-menu > li > a .dropdown-open {
   background: lighter(#A174CF, 30%);
+}
+
+.private .breadcrumb {
+  color: #C0C0C2;
 }
 
 .private .image-wrap {

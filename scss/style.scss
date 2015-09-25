@@ -40,9 +40,11 @@ h1 {
   font-size: .85em;
   padding: 10px;
 }
-/* ===== BUTTONS ===== */
+
+/* ====||||| PUBLIC STYLES |||||==== */
 @include theme(public, $blue, $white);
-@include theme(private, $teal, $white);
+/* ====||||| PRIVATE STYLES |||||===== */
+@include theme(private, $purple, $white);
 
 .red {
   border: 1px solid red;
