@@ -29,7 +29,7 @@ h1 {
   font-size: .85em;
   padding: 10px; }
 
-/* ===== BUTTONS ===== */
+/* ====||||| PUBLIC STYLES |||||==== */
 .public .color-box {
   height: 75px;
   width: 75px;
@@ -86,6 +86,8 @@ h1 {
     border-top: 0; }
   .public .dropdown-menu > li > a .dropdown-open {
     background: lighter(#52ABDB, 30%); }
+.public .breadcrumb {
+  color: #C0C0C2; }
 .public .image-wrap {
   position: relative; }
   .public .image-wrap img {
@@ -168,6 +170,7 @@ h1 {
       .public footer .footer-social li:last-child {
         margin-right: 0; }
 
+/* ====||||| PRIVATE STYLES |||||===== */
 .private .color-box {
   height: 75px;
   width: 75px;
@@ -224,6 +227,8 @@ h1 {
     border-top: 0; }
   .private .dropdown-menu > li > a .dropdown-open {
     background: lighter(#A174CF, 30%); }
+.private .breadcrumb {
+  color: #C0C0C2; }
 .private .image-wrap {
   position: relative; }
   .private .image-wrap img {
