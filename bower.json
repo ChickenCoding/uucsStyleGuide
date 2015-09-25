@@ -18,6 +18,7 @@
     "bootstrap": "~3.3.5",
     "font-awesome": "~4.4.0",
     "jquery": "~2.1.4",
-    "bxslider-4": "~4.2.5"
+    "bxslider-4": "~4.2.5",
+    "yepnope": "~1.5.4"
   }
 }
