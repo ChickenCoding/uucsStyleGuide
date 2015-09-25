@@ -1,6 +1,7 @@
 config.codekit
-/bower_components
+clients/bower_components
 uucs.mcp
 .DS_Store
 vendor/
 composer.lock
+.sass_cache
