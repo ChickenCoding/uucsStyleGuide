@@ -1,5 +1,5 @@
 config.codekit
-clients/bower_components
+client/
 uucs.mcp
 .DS_Store
 vendor/
