@@ -5,3 +5,5 @@ uucs.mcp
 vendor/
 composer.lock
 .sass_cache
+.idea
+css/
